@@ -56,7 +56,7 @@ public class ExplicitlyLoadedActivity extends Activity {
 		// TODO - Create a new intent and save the input from the EditText field as an extra
 		Intent data = new Intent();
 		data.setType(HTTP.PLAIN_TEXT_TYPE);
-		data.putExtra(USER_TEXT, text.toString());
+		data.putExtra(USER_TEXT, (text==null? null: text.toString()));
 		
 		// TODO - Set Activity's result with result code RESULT_OK
 		if (getParent() == null) {

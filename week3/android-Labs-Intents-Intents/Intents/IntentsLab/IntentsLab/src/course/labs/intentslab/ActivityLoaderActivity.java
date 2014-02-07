@@ -114,7 +114,7 @@ public class ActivityLoaderActivity extends Activity {
 			String text = map.getString(ExplicitlyLoadedActivity.USER_TEXT);
 
 			if( text.isEmpty () ) {
-				mUserTextView.setText("Nothing...");
+				mUserTextView.setText(R.string.no_text_entered);
 			} else {
 				mUserTextView.setText(text);
 				Log.d(TAG, "Received text:"+ text);
