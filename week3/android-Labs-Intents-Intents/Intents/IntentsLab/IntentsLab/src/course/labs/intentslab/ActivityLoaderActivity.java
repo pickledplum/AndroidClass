@@ -84,14 +84,14 @@ public class ActivityLoaderActivity extends Activity {
 
 		// TODO - Create a base intent for viewing a URL 
 		// (HINT:  second parameter uses parse() from the Uri class)
-		
+		Intent browser = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(URL)); 
 		
 		// TODO - Create a chooser intent, for choosing which Activity
 		// will carry out the baseIntent. Store the Intent in the 
 		// chooserIntent variable below. HINT: using the Intent class' 
 		// createChooser())
 		
-		Intent chooserIntent = null;
+		Intent chooserIntent = Intent.createChooser(browser, CHOOSER_TEXT);
 
 		Log.i(TAG,"Chooser Intent Action:" + chooserIntent.getAction());
 		// TODO - Start the chooser Activity, using the chooser intent
