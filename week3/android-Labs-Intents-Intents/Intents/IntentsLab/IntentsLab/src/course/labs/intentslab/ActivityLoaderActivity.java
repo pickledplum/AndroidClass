@@ -117,7 +117,6 @@ public class ActivityLoaderActivity extends Activity {
 				mUserTextView.setText(R.string.no_text_entered);
 			} else {
 				mUserTextView.setText(text);
-				Log.d(TAG, "Received text:"+ text);
 			}
 		}
 	}
